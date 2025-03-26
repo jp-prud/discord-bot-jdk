@@ -5,7 +5,14 @@
   "repository": "https://github.com/jp-prud/discord-bot-jdk",
   "author": "João Pedro Prudêncio <joaopprudencio82@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "node build.ts",
+    "dev": "node build.ts --watch"
+  },
   "devDependencies": {
+    "esbuild": "^0.25.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   }
 }
